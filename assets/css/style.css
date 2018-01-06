@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:300');
+
+/*Nav Bar*/
+#nav-bar {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0px;
+	background: #004953;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+#home-DropDown {
+	margin-right: 15%;
+	font-size: 30px;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: bold;
+}
+
+.nav-items {
+	display: inline;
+	padding: 10px;
+	color: #fdfdfd;
+	font-size: 16px;
+	font-family: 'Yantramanav', sans-serif;
+	border: solid #004953 2px;
+	border-radius: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.nav-items:hover:not(.active) {
+	background-color: #24606a;
+}
+
+.active {
+	background-color: #24606a;
+}
+
+h1 {
+	font-family: 'Yantramanav', sans-serif;
+	padding: 20px;
+	color: #343434;
+}
+
+#field-types {
+	border: solid #a0c3c8 1.5px;
+	border-radius: 5px;
+}
+
+#field-details {
+	border: solid #a0c3c8 1.5px;
+	border-radius: 5px;
+}
+
+#field-groups {
+	float: right;
+	clear: both;
+}

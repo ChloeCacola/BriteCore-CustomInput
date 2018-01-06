@@ -3,10 +3,76 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap 4 **CDN** -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- 	
+	******NOTE******
+	I mainly chose to use Bootstrap for the purpose of gridding, responsive sizing quick implementation, improved cross-browser rendering with normalize.css and auto box-sizing format 
+	In other words, it saves time for this mini-project! 
+	-->
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 	<!-- Vue JS -->
 	<script src="./assets/js/vue.js"></script>
+	<script src="./assets/js/tags.js"></script>
 </head>
+
 <body>
+
+	<!-- Nav Bar -->
+	<ul id="nav-bar">
+		<li class="nav-items" id="home-DropDown">BriteCore</li>
+		<li class="nav-items">Policies</li>
+		<li class="nav-items">Claims</li>
+		<li class="nav-items">Contacts</li>
+		<li class="nav-items">Data</li>
+		<li class="nav-items active">Lines</li>
+		<li class="nav-items">All Modules</li>
+	</ul>
+
+	<div class="container-fluid">
 	
+	<h1> Commercial Property - Add Field </h1>
+
+		<div class='row'>
+	
+		<!-- All Field types in this box -->
+		<div id='field-types' class='col-md-4'>
+
+		<p>field Types</p>
+
+		</div><!--end field-types-->
+
+		<div id='field-details' class='col-md-8'>
+
+			<p> Field Details</p>
+
+			<div id="field-groups"> Field Groups </div>
+
+		</div><!--end field-details-->
+		</div>
+
+	</div><!--end container-fluid-->
+
+
+
+<!-- Move this to Vue file -->
+<script>
+	new Vue ({
+	el: '#tags',
+	data: {
+		tags: [
+		{ name: "Tag 1", type: "auto"},
+		{ name: "Tag 2", type: "home"},
+		{ name: "Tag 3", type: "property"}
+		]
+	}
+});
+</script>
+
 </body>
 </html>
