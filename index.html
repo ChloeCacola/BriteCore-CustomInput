@@ -27,7 +27,7 @@
 	<ul id="nav-bar">
 		
 		<li class="nav-items" id="home-DropDown">BriteCore</li>
-		<span><li class="nav-items">Policies</li>
+		<span id="nav-adjust"><li class="nav-items">Policies</li>
 		<li class="nav-items">Claims</li>
 		<li class="nav-items">Contacts</li>
 		<li class="nav-items">Data</li>
@@ -53,7 +53,24 @@
 
 			<h2> Field Details</h2>
 
-			<div id="field-groups"> <h3> Field Groups </h3> </div>
+			<div id="field-groups"> 
+
+				<h3> Field Groups </h3>
+				<p id="choose-group"> Choose a group for this input </p>
+
+				<div id="group-list">
+					<!-- vue list will go here -->
+					<!-- replace example below with vue list -->
+					<h4 class="group-title">Rental Vehicle Coverage Package</h4>
+					<p class="input-total"><span class="input-total-num">7</span> other inputs</p>
+
+
+				</div>
+
+				<button id='add-new-group'>Add A New Group</button>
+
+
+			</div><!--end field groups-->
 
 		</div><!--end field-details-->
 		</div>
