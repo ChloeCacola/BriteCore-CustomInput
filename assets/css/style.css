@@ -104,7 +104,7 @@ h3 {
 	color: #708c90;
 }
 
-#group-list {
+.group-list {
 	font-family: 'Yantramanav', sans-serif;
 	padding: 10px;
 	padding-bottom: 0px;
@@ -113,6 +113,11 @@ h3 {
 	border-radius: 5px;
 	width: 90%;
 	margin: 0 auto;
+}
+
+.group-list:hover {
+	border: solid #a0c3c8 1.5px;
+	cursor: pointer;
 }
 
 .group-title {
@@ -148,6 +153,12 @@ h3 {
 	font-size: 15px;
 	font-weight: 700;
 
+}
+
+#add-new-group:hover {
+	cursor: pointer;
+	border: solid #004953 1.5px;
+	color: #708c90;
 }
 
 @media (max-width: 768px) {
