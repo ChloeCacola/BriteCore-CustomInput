@@ -62,6 +62,10 @@ h2 {
 	font-weight: bolder;
 }
 
+#field-D-header {
+	padding-top: 5px;
+}
+
 /*Field Types div*/
 #field-types {
 	font-family: 'Yantramanav', sans-serif;
@@ -94,6 +98,7 @@ h2 {
 	padding-top: 0px;
 	margin: 0 auto;
 	display: block;
+	margin-bottom: 20px;
 }
 
 #filter:focus {
@@ -104,8 +109,13 @@ h2 {
 	border: solid #a0c3c8 1.5px;
 	border-radius: 5px;
 	background: #fff;
-	padding-bottom: 20px;
+	padding: 20px;
 }
+
+.no-gutters {
+	padding: 0px;
+}
+
 
 h3 {
 	font-family: 'Yantramanav', sans-serif;
@@ -117,13 +127,12 @@ h3 {
 	font-weight: bold;
 }
 
+
 #field-groups {
-	float: right;
-	clear: both;
 	border: solid #e0ebec 1.5px;
 	border-radius: 5px;
 	background: #f9fbfb;
-	width: 33.3%;
+	height: 100%;
 	position: relative;
 }
 
@@ -186,13 +195,19 @@ h3 {
 	font-family: 'Yantramanav', sans-serif;
 	font-size: 15px;
 	font-weight: 700;
+	position: absolute;
+	bottom: 0;
 
+}
+
+.center {
+	position: relative;
+	text-align: center;
 }
 
 #add-new-group:hover {
 	cursor: pointer;
 	border: solid #004953 1.5px;
-	color: #708c90;
 }
 
 @media (max-width: 768px) {

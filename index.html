@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<!-- 	
 	******NOTE******
-	I mainly chose to use Bootstrap for the purpose of gridding, responsive sizing quick implementation, improved cross-browser rendering with normalize.css and auto box-sizing format 
-	In other words, it saves time for this mini-project! 
+	Bootstrap is used here for the purpose of gridding, quick implementation of responsive sizing, improved cross-browser rendering with normalize.css and auto box-sizing format 
+	In other words > saves time for this mini-project as my main goal is to learn and implement Vue.js
 	-->
 
 	<!-- Custom CSS -->
@@ -18,7 +18,7 @@
 
 	<!-- Vue JS -->
 	<script src="./assets/js/vue.js"></script>
-	<script src="./assets/js/tags.js"></script>
+
 </head>
 
 <body>
@@ -36,26 +36,70 @@
 
 	</ul>
 
+	<!-- ADD FIELD CONTAINER -->
 	<div class="container-fluid">
 	
-	<h1> Commercial Property - Add Field </h1>
+	 <h1> Commercial Property - Add Field </h1>
 
-		<div class='row'>
+	  <div class='row'>
 	
-		<!-- All Field types in this box -->
+		<!-- FIELD TYPES -->
 		<div id='field-types' class='col-12 col-sm-12 col-md-4 col-lg-3'>
 
-		<h2 id="field-T-header">Field Types</h2>
-		<p id='filter-types'>Filter Types</p>
-		<input type='text' id='filter'>
+			<h2 id="field-T-header">Field Types</h2>
+
+			<p id='filter-types'>Filter Types</p>
+			<input type='text' id='filter'>
 
 
 		</div><!--end field-types-->
+		
 
-		<div id='field-details' class='col-12 col-sm-12 col-md-7 col-lg-8'>
+		<!-- FIELD DETAILS -->
+	  <div class='col-12 col-sm-12 col-md-7 col-lg-8 no-gutters'>
+		<div id='field-details'>
 
 			<h2 id="field-D-header"> Field Details</h2>
+			  <div class='row'>
+				<div class="col-8">
+				<form id="field-D-inputs">
+					<div class='row'>
+						<!-- Labels to the left -->
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 
+							<label for="display">Display Label</label><br>
+							<input type='' name='' id="display"><br>
+
+							<label for="default">Default Value</label><br>
+							<input type='' name='' id="default"><br>
+
+							<label for="custom-validate">Custom Validation</label><br>
+							<input type='' name='' id="custom-validate">
+
+						</div>
+						<!-- Label to the right -->
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+							<label for="reference">Reference Name</label><br>
+							<input type='' name='' id="reference"><br>
+
+						</div>
+					</div><!--Label row-->
+				</form>
+
+				  <div class='row'>
+					<div class='col-8'>
+						<!-- To be replaced with VUE.JS -->
+						<br><br><br>
+						<br>
+						<div>TAGS will go here!</div>
+						<br><br>
+
+					</div><!--end tag col-->
+				  </div><!--end tag row-->
+				</div><!--end field inputs col-->
+			
+		   <div class="col-4">
 			<div id="field-groups"> 
 
 				<h3> Field Groups </h3>
@@ -67,17 +111,19 @@
 					<h4 class="group-title">Rental Vehicle Coverage Package</h4>
 					<p class="input-total"><span class="input-total-num">7</span> other inputs</p>
 
-
 				</div>
 
 				<button id='add-new-group'>Add A New Group</button>
 
 
 			</div><!--end field groups-->
+		   </div><!--end field groups col-->
+
+		  </div> <!-- row -->
 
 		</div><!--end field-details-->
-		</div>
-
+	  </div><!--end field-details col-->
+	 </div><!-- end row -->
 	</div><!--end container-fluid-->
 
 
