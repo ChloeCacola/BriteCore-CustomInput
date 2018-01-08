@@ -42,7 +42,7 @@
 	 <h1> Commercial Property - Add Field </h1>
 
 	  <div class='row'>
-	
+
 		<!-- FIELD TYPES -->
 		<div id='field-types' class='col-12 col-sm-12 col-md-4 col-lg-3'>
 
@@ -50,7 +50,19 @@
 
 			<p id='filter-types'>Filter Types</p>
 			<input type='text' id='filter'>
+			
+			<div class='row'>
+			<!-- NOTE:  JS onclick will change class to active -->
+			<p class="test active">ACTIVE</p>
+			</div>
 
+			<div class='row'>
+			<p class="test">test2</p>
+			</div>
+
+			<div class='row'>
+			<p class="test">test3</p>
+			</div>			
 
 		</div><!--end field-types-->
 		
@@ -119,11 +131,13 @@
 			</div><!--end field groups-->
 		   </div><!--end field groups col-->
 
-		  </div> <!-- row -->
+		  </div> <!-- end row -->
 
 		</div><!--end field-details-->
-	  </div><!--end field-details col-->
-	 </div><!-- end row -->
+	   </div><!--end field-details col-->
+	  </div><!-- end main row -->
+
+	  <span><button id="save">save</button> <button id="cancel">Cancel</button> <button id="delete">Delete</button></span>
 	</div><!--end container-fluid-->
 
 
