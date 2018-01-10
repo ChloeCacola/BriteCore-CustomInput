@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:300,400,700');
 
+* {
+	font-family: 'Yantramanav', sans-serif;
+}
+
 body {
 	background: #f9fbfb;
 }
@@ -17,7 +21,6 @@ body {
 #home-DropDown {
 	margin-right: 6%;
 	font-size: 30px;
-	font-family: 'Yantramanav', sans-serif;
 	font-weight: 700;
 	padding-bottom: 0px;
 }
@@ -27,7 +30,6 @@ body {
 	padding: 10px;
 	color: #f9fbfb;
 	font-size: 16px;
-	font-family: 'Yantramanav', sans-serif;
 	font-weight: 300;
 	border: solid #004953 2px;
 	border-radius: 5px;
@@ -40,21 +42,20 @@ body {
 	cursor: pointer;
 }
 
-.active {
+.nav-active {
 	background-color: #24606a;
 }
 
 /*Commercial Property - Add Field*/
 h1 {
-	font-family: 'Yantramanav', sans-serif;
 	font-weight: 300;
 	padding: 20px;
+	padding-left: 0px;
 	color: #343434;
 }
 
 /*Field Types & Details header*/
 h2 {
-	font-family: 'Yantramanav', sans-serif;
 	font-size: 26px;
 	padding: 25px;
 	padding-left: 5px;
@@ -69,12 +70,10 @@ h2 {
 
 /*Field Types div*/
 #field-types {
-	font-family: 'Yantramanav', sans-serif;
 	border: solid #a0c3c8 1.5px;
 	border-radius: 5px;
 	background: #eef4ff;
-	margin-left: 35px;
-	max-height: 450px;
+	max-height: 443px;
 	overflow-x: hidden;
 	overflow-y: auto;
 	
@@ -144,7 +143,6 @@ h2 {
 
 
 h3 {
-	font-family: 'Yantramanav', sans-serif;
 	font-size: 22px;
 	padding: 20px;
 	padding-left: 10px;
@@ -163,7 +161,6 @@ h3 {
 }
 
 #choose-group {
-	font-family: 'Yantramanav', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	padding: 0px;
@@ -174,7 +171,6 @@ h3 {
 }
 
 .group-list {
-	font-family: 'Yantramanav', sans-serif;
 	padding: 10px;
 	padding-bottom: 0px;
 	background: #fff;
@@ -236,25 +232,112 @@ h3 {
 	border: solid #004953 1.5px;
 }
 
+#save {
+	border-style: none;
+	border-radius: 1px;
+	border: solid #008da6 1px;
+	box-shadow: 0 0 0 1.5px #007e94;
+	background: #008ca5;
+	font-family: 'Yantramanav', sans-serif;
+	color: #fff;
+	text-shadow: -1px 1px #007e94;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+#save:hover {
+	cursor: pointer;
+	background: #007e94;
+}
+
+
+#delete {
+	float: right;
+	border-style: none;
+	border-radius: 1px;
+	border: solid #b72b05 1px;
+	box-shadow: 0 0 0 1.5px #a63036;
+	background: #b61622;
+	font-family: 'Yantramanav', sans-serif;
+	color: #fff;
+	text-shadow: -1px 1px #a3141f;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#delete:hover {
+	cursor: pointer;
+	background: #a63036;
+}
+
+#cancel {
+	float: right;
+	border-style: none;
+	border-radius: 1px;
+	border: solid #fff 1px;
+	box-shadow: 0 0 0 1.5px #bfd6d9;
+	background: #fff;
+	font-family: 'Yantramanav', sans-serif;
+	color: #000;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+#cancel:hover {
+	cursor: pointer;
+	background: #bfd6d9;
+	border: solid #bfd6d9 1px;
+}
 
 @media (max-height: 700px) {
 	h1 {
 		font-size: 25px;
 		padding: 10px;
-		padding-left: 20px;
-		padding-bottom: 0px
+		padding-left: 0px;
+		padding-bottom: 0px;
 	}
 
 	#nav-bar {
 		margin-bottom: 0px;
 		padding-bottom: 0px;
 	}
+}
+
+@media (max-width: 992px) {
+	h2 {
+		font-size: 23px;
+	}
+
+	h3 {
+		font-size: 19px;
 	}
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 767.5px) {
+	h1 {
+		color: red;
+	}
+
+	#home-DropDown {
+		padding-right: 0px;
+	}
+
+	.nav-items {
+		padding: 3px;
+	}
+
 	#field-details {
-		margin-left: 35px;
 		max-width: 88%;
 	}
 	#field-types {
@@ -264,13 +347,34 @@ h3 {
 		width: 100%;
 	}
 
-	#nav-adjust {
-		display: block;
-		padding-bottom: 5px;
+	h1 {
+		font-size: 25px;
+		padding: 10px;
+		padding-left: 0px;
+		padding-bottom: 0px;
 	}
 
+	#nav-bar {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
 	}
+
+}
 
 @media (max-width: 576px) {
+	#nav-bar {
+		padding-bottom: 10px;
+	}
 
+	h1 {
+		font-size: 25px;
+		padding: 10px;
+		padding-left: 0px;
+		padding-bottom: 0px;
+	}
+
+	#nav-bar {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
 }
