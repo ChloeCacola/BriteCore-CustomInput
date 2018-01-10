@@ -38,3 +38,11 @@ TAGS
 Selecting a specified TAG GROUP (button) will generate TAG LIST
 */
 
+/*
+CAMELCASE AUTOGENERATION 
+
+User types Display Label and Reference name is auto generated with spaces removed, and first letter of each word after the first raised to a capital letter (camelCase)
+
+Vue implementation will involve using an instance of Vue to select the HTML element with containing input.  The input will involve use of a directive for vue js to recognize and consequently use event.target.value (the value of what user types in input) in a method that also pulls out the spaces and capitalizes proper letters.
+*/ 
+
