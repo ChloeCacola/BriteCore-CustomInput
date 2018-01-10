@@ -19,6 +19,7 @@ body {
 	font-size: 30px;
 	font-family: 'Yantramanav', sans-serif;
 	font-weight: 700;
+	padding-bottom: 0px;
 }
 
 .nav-items {
@@ -235,7 +236,21 @@ h3 {
 	border: solid #004953 1.5px;
 }
 
-/*NEED TO ADD HEIGHT QUERIES!*/
+
+@media (max-height: 700px) {
+	h1 {
+		font-size: 25px;
+		padding: 10px;
+		padding-left: 20px;
+		padding-bottom: 0px
+	}
+
+	#nav-bar {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+	}
+}
 
 @media (max-width: 768px) {
 	#field-details {
