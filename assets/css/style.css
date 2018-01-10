@@ -59,13 +59,19 @@ h2 {
 	font-size: 26px;
 	padding: 25px;
 	padding-left: 5px;
-	padding-bottom: 5px;
+	padding-bottom: 0px;
 	color: #343434;
 	font-weight: bolder;
 }
 
+/*delete*/
+#temp {
+	padding-bottom: 5px;
+}
+
 #field-D-header {
 	padding-top: 5px;
+	padding-left: 0px;
 }
 
 /*Field Types div*/
@@ -78,6 +84,26 @@ h2 {
 	overflow-y: auto;
 	
 }
+
+::-webkit-scrollbar-track
+{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #a6a6a6;
+}
+
+
 /*Filter Types description*/
 #filter-types {
 	font-size: 16px;
