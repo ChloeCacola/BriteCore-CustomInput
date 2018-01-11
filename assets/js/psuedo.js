@@ -12,9 +12,8 @@ e.g. 'Currency' => type='text' + '$' included
 /*
 ON BLUR EVENTS
 
-1. Reference name auto-generated from user-entered label **camelCase**
+1. Custom validation true or false
 
-2. Custom validation true or false
 */
 
 /*

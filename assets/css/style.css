@@ -163,6 +163,14 @@ h2 {
 	padding: 20px;
 }
 
+/*aware :not is not supported by iE9; simplified here for sake of purpose of project*/
+input:not([type=submit]):not([type=file]) {
+	font-size: 14px;
+	font-family: 'Yantramanav', sans-serif;
+	display: flex;
+	flex: 1;
+}
+
 .no-gutters {
 	padding: 0px;
 }
@@ -330,7 +338,19 @@ h3 {
 		font-size: 25px;
 		padding: 10px;
 		padding-left: 0px;
-		padding-bottom: 0px;
+		margin-bottom: 5px;
+	}
+
+	#field-D-header {
+		padding-top: 0px;
+	}
+
+	#field-details {
+		padding-top: 10px;
+	}	
+
+	h2 {
+		padding-top: 10px;
 	}
 
 	#nav-bar {
@@ -365,6 +385,7 @@ h3 {
 
 	#field-details {
 		max-width: 88%;
+		padding-top: 10px;
 	}
 	#field-types {
 		max-width: 88%;
@@ -377,7 +398,11 @@ h3 {
 		font-size: 25px;
 		padding: 10px;
 		padding-left: 0px;
-		padding-bottom: 0px;
+		margin-bottom: 5px;
+	}
+	
+	#field-D-header {
+		padding-top: 0px;
 	}
 
 	#nav-bar {
@@ -396,7 +421,15 @@ h3 {
 		font-size: 25px;
 		padding: 10px;
 		padding-left: 0px;
-		padding-bottom: 0px;
+		margin-bottom: 5px;
+	}
+
+	#field-D-header {
+		padding-top: 0px;
+	}
+
+	#field-details {
+		padding-top: 10px;
 	}
 
 	#nav-bar {
