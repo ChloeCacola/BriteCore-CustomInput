@@ -74,13 +74,14 @@
 			<h2 id="field-D-header"> Field Details</h2>
 			  <div class='row'>
 				<div class="col-8">
+				<!-- referenced in refNameGenerator.js -->
 				<form id="field-D-inputs">
 					<div class='row'>
 						<!-- Labels to the left -->
 						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 
 							<label for="display">Display Label</label><br>
-							<input type='' name='' id="display"><br>
+							<input type='' name='' id="display" v-on:input="changeValue"><br>
 
 							<label for="default">Default Value</label><br>
 							<input type='' name='' id="default"><br>
@@ -93,7 +94,7 @@
 						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 
 							<label for="reference">Reference Name</label><br>
-							<input type='' name='' id="reference"><br>
+							<input type='' name='' id="reference" :value="refName.id"><br>
 
 						</div>
 					</div><!--Label row-->
@@ -142,19 +143,8 @@
 
 
 
-<!-- Move this to Vue file -->
-<script>
-	new Vue ({
-	el: '#tags',
-	data: {
-		tags: [
-		{ name: "Tag 1", type: "auto"},
-		{ name: "Tag 2", type: "home"},
-		{ name: "Tag 3", type: "property"}
-		]
-	}
-});
-</script>
+<!-- Reference Name Generator (Vue) -->
+<script src="./assets/js/refNameGenerator.js"></script>
 
 </body>
 </html>
